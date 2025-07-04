@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #12101e;
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    background-color: #3e385d;
+    border-bottom: 1px solid #333;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo {
+    color: #ccc;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.site-header nav a {
+    color: #ccc;
+    margin-left: 20px;
+}
+
+.site-header nav a:hover {
+    color: #00bcd4;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    position: relative;
+}
+
+.hero-logo {
+    width: 320px;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.games .game-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.news {
+    padding: 60px 20px;
+    background-color: #181628;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #fff;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.news-card {
+    background-color: #1f1d36;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.news-date {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.news-card p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.founders {
+    padding: 60px 20px;
+    background-color: #181628;
+    text-align: center;
+}
+
+.founders h2 {
+    margin-bottom: 40px;
+    font-size: 34px;
+    color: #fff;
+}
+
+.founder-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.founder-card {
+    background-color: #1f1d36;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 48%;
+    min-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.founder-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.founder-role {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 4px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.founder-card h4 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.founder-text p {
+    font-size: 16px;
+    color: #ccc;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.8;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    padding: 60px 20px;
+    background-color: #26233d;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 16px;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1f1d36;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contact textarea {
+    min-height: 120px;
+}
+
+.contact button {
+    padding: 14px;
+    background-color: #5bd2dd;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact button:hover {
+    background-color: #4ac2cc;
+}
+
+.site-footer {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding: 40px 20px;
+    font-size: 16px;
+    background: #12101e;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    color: #00bcd4;
+}
+
+/* Game card styles */
+.game-card {
+    margin-top: 30px;
+    max-width: 700px;
+    background-color: #1f1d36;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.game-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #5bd2dd;
+}
+
+.game-description {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .founder-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 90%;
+    }
+
+    .news-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-header nav {
+        margin-top: 10px;
+    }
+
+    .game-card {
+        width: 100%;
+    }
+}
